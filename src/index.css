@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Nunito+Sans:wght@900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+.container {
+  @apply flex flex-col justify-center text-center w-full md:w-[50%] p-14 lg:p-[9.5rem] bg-[#fffbf8];
+}
+
+.container__heading {
+  @apply font-fraunce font-extrabold text-[2.5rem] leading-[3rem] text-[#23303e];
+}
+
+.container__description {
+  @apply text-gray-500 font-barlow text-lg py-10;
+}
+
+.container__btn {
+  @apply font-fraunce font-bold cursor-pointer text-[#23303e];
+}
+
+.container__btn_border {
+  @apply cursor-pointer h-[12px] w-32 rounded-lg -ml-2 -mt-[0.7rem];
+}
+
+.service__container {
+  @apply bg-no-repeat bg-cover bg-center w-full md:w-1/2 h-[600px] flex flex-col text-center justify-center px-12 sm:px-20 xl:px-52 pt-96;
+}
+
+.service__container__heading {
+  @apply font-fraunce text-3xl lg:text-2xl font-extrabold pb-7;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent #ffffff transparent;
+  border-style: solid;
+}
